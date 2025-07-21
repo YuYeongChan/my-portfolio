@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "tt";
+    src: url("A바른생각.TTF");
+}
+
+table{
+    border-style: groove;
+    font-family: "tt";
+}
+.title{
+    font-size: 30px;
+    font-weight: 400;
+    color: gold;
+}

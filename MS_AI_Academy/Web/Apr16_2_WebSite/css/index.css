@@ -1,0 +1,80 @@
+@font-face {
+    /* 
+    CSS3에서 추가된 웹폰트 
+        사용자컴에 설치가 안되어있어도 폰트 사용 가능하게
+        1) CSS3 -> IE에서 안됨...
+        2) 폰트파일은 용량이 큰데, 서버에서 사용자에게 제공
+            서버가 느리면?
+        -> 실무에서는 이미지로 작업해오지
+    */
+    font-family: "hg";
+    src: url("HangamePoker-Medium.ttf");
+}
+a{
+    /* 밑줄 삭제 */
+    text-decoration: none;
+}
+body{
+    background-color: rgba(152, 216, 241, 0.266);
+    /* 기본 여백 삭제 */
+    margin: 0px;
+    padding: 0px;
+}
+#siteTitleArea{
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color:  rgb(229, 248, 255);
+}
+#siteTitle{
+    /*
+    640x480
+    800x600
+    1024x768
+    1280x1024
+    */
+    width: 1200px;
+    height: 90px;
+    font-family: "hg";
+    font-size: 30px;
+    color: rgb(73, 70, 70);
+    font-style: italic;
+    text-shadow: 1px 1px 1px;
+}
+#siteMenuArea{
+    background-color: rgba(137, 162, 238, 0.84);
+}
+#siteMenu{
+    width: 1200px;
+    height: 36px;
+}
+#siteMenu a{
+    transition: all 200ms ease-in; /* 속성명 시간 속도조절
+                                                ease-in : 점점빨라짐
+                                                ease-out : 점점느려짐
+                                                linear : 등속
+                                        CSS3에 추가된...
+                                     */
+    font-family: "hg";
+    color: rgb(25, 25, 173);
+    margin-right: 25px;
+    font-weight: 430; /* 굵게 */
+    font-size: 16px;
+}
+#siteMenu a:hover{
+    color: rgb(149, 108, 149);
+    font-size: 18px;
+}
+#siteContentArea{
+    /* 단독 테이블 가운데 정렬 */
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    background-color: rgb(238, 250, 254);
+    padding-top: 140px;
+}
+::-webkit-scrollbar{
+    /* (크롬, 엣지에서만) */
+    display: none;
+}

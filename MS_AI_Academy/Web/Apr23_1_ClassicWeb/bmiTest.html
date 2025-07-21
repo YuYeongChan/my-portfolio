@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>비만도 검사</title>
+    <script src="j1bmi.js"></script>
+    <script src="yuValidChecker.js"></script>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <form name="joinForm" onsubmit="return check();" action="http://localhost:5678/bmiresult.te.st" method="post" enctype="multipart/form-data">
+        <table>
+            <tr align="center">
+                <th colspan="2" class="title">비만도 검사</th>
+            </tr>
+            <tr>
+                <td align="center" class="cat">이름</td>
+                <td><input name="name" maxlength="10" autocomplete="off"><p></td>
+            </tr>
+            <tr>
+                <td align="center" class="cat">키</td>
+                <td><input name="hei" maxlength="3">cm<p></td>
+            </tr>
+            <tr>
+                <td align="center" class="cat">몸무게</td>
+                <td><input name="wei" maxlength="3">kg<p></td>
+            </tr>
+            <tr>
+                <td align="center" class="cat">사진</td>
+                <td><input name="psa" type="file"><p></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><button>검사</button></td>
+            </tr>
+        </table>
+    </form>
+</body> 
+</html>

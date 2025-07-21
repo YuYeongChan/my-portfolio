@@ -1,0 +1,22 @@
+#gameDate1{
+    text-decoration: 17px;
+}
+#weekSheet{
+    font-size: 18px;
+    border-bottom: 0.5px double;
+}
+#weekData .dataTr{
+    background-color: azure;
+    border: 1px;
+}
+#weekData .dataTr:hover{
+    background-color: rgb(184, 193, 193);
+}
+gameNum{
+    font-weight: 500px;
+}
+
+/* 
+td간의 간격
+border-spacing : 0px
+*/
